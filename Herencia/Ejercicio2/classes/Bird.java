@@ -21,13 +21,16 @@ public class Bird extends Animal{
     }
 
     @Override
-    void init_sound() {
-
+  public  void init_sound() {
+        System.out.println("te bird sing");
     }
 
     @Override
-    void information() {
-
+    public void information() {
+        System.out.println("Name: "+ getNombre());
+        System.out.println("Age: "+getAge());
+        System.out.println("Genre: "+getGenre());
+        System.out.println("Raza: "+getEspecie());
     }
 
     @Override

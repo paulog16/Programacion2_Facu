@@ -21,13 +21,16 @@ public class Cat extends Animal{
     }
 
     @Override
-    void init_sound() {
-
+   public void init_sound() {
+        System.out.println(" the cat meows");
     }
 
     @Override
-    void information() {
-
+    public void information() {
+        System.out.println("Name: "+ getNombre());
+        System.out.println("Age: "+getAge());
+        System.out.println("Genre: "+getGenre());
+        System.out.println("Color eyes: "+getColor_eyes());
     }
 
     @Override

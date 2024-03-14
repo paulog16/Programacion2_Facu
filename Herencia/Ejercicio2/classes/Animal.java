@@ -1,6 +1,6 @@
 package Ejercicio2.classes;
 
-public abstract class Animal {
+public class Animal {
     private String nombre;
     private int age;
     private String genre;
@@ -40,8 +40,12 @@ public abstract class Animal {
         this.genre = genre;
     }
 
-    abstract void init_sound();
-    abstract void information();
+   public void init_sound(){
+
+   };
+    public void information(){
+
+    };
     @Override
     public String toString() {
         return "Animal{" +
