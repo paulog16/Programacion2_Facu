@@ -1,4 +1,4 @@
-package trabajo_practico_2;
+package trabajo_practico_2_EJ1;
 
 public class Main {
     public static void main(String[] args) {

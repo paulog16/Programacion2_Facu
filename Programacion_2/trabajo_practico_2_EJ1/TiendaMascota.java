@@ -1,4 +1,4 @@
-package trabajo_practico_2;
+package trabajo_practico_2_EJ1;
 
 import java.util.ArrayList;
 import java.util.List;
