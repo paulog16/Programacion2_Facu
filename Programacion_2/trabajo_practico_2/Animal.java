@@ -48,6 +48,16 @@ public class Animal {
         this.precio = precio;
     }
 
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                ", tipoAnimal='" + tipoAnimal + '\'' +
+                ", precio=" + precio +
+                '}';
+    }
+
     public void alimentar(String nombre){
         System.out.println(nombre+ " ha sido alimentado");
     }
