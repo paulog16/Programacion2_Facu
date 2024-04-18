@@ -12,10 +12,13 @@ public class Main {
 
         //CREAMOS CLIENTES Y LOS AGREGAMOS AL CARRITO
         Cliente c1= new Cliente("Paulo","Guidolin");
+
+
         c1.agregarProducto(produc1);
         c1.agregarProducto(produc2);
         c1.agregarProducto(produc3);
         c1.agregarProducto(produc4);
+
 
         //AGREGAMOS PRODUCTOS AL SUPERMERCADO
         Supermercado supers= new Supermercado(c1);
@@ -25,6 +28,8 @@ public class Main {
         supers.agregarProducto(produc3);
         supers.agregarProducto(produc4);
 
+        System.out.println("EL CLIENTE "+c1.getNombre()+" COMPRO:");
+
         //REALIZAMOS LA COMPRA DE LOS PRODUCTOS
         supers.realizarCompra("Agua");
         supers.realizarCompra("Queso");
@@ -32,11 +37,13 @@ public class Main {
         supers.realizarCompra("Manteca");
         supers.realizarCompra("Manteca");
 
-
+        System.out.println("------------------------");
+        System.out.println("STOCK DEL SUPER");
 
         //MOSTRAMOS EL INVENTARIO Y EL STOCK
         supers.mostrar();
-
+        System.out.println("---------------------");
+        System.out.println("MONTO TOTAL GASTADO");
         //MOSTRAMOS EL MONTO QUE SE GASTO EN COMPRAR
         supers.montoTotal();
 

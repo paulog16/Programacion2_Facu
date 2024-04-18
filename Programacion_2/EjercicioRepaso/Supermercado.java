@@ -31,7 +31,7 @@ public class Supermercado {
         Productos produu = buscarProducto(nombre);
 
         if (produu != null && produu.getStock()>=1) {
-            System.out.println(" se compro el producto: "+produu.getNombre());
+            System.out.println("producto: "+produu.getNombre());
             monto_gastado=monto_gastado+produu.getPrecio();
             produu.setStock(produu.getStock()-1);
         }else{
